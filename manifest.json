@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "CSDN友好插件",
+    "version": "1.0",
+    "description": "和CSDN交流时保持友好心情",
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://blog.csdn.net/*"
+            ],
+            "js": [
+                "./index.js"
+            ],
+            "css": [
+                "./index.css"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
